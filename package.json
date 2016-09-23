@@ -1,0 +1,26 @@
+{
+  "name": "flowalyzer",
+  "version": "1.0.0",
+  "description": "This is a MEAN stack app that is designed to allow the user to look at the rhyme schemes of prominent rappers to see who has the dopest flows.",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "coverage": "istanbul cover _mocha"
+  },
+  "author": "Marshall Friskics-Warren",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-session": "^1.14.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.0.2"
+  }
+}
