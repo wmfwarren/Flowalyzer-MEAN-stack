@@ -34,4 +34,40 @@ describe("This function drops the silent parts of double consonant. ", () => {
     let expected = "emnt";
     assert.equal(dropSilentLeadingLetter("emnt"), expected)
   });
+  //pn
+  it("it should make a leading 'pn' into an 'n'", () => {
+    let expected = "neumatic";
+    assert.equal(dropSilentLeadingLetter("pneumatic"), expected)
+  });
+  it("it should not make an internal 'pn' into an 'n'", () => {
+    let expected = "upn";
+    assert.equal(dropSilentLeadingLetter("upn"), expected)
+  });
+  //kh
+  it("it should make a leading 'kh' into an 'k'", () => {
+    let expected = "kan";
+    assert.equal(dropSilentLeadingLetter("khan"), expected)
+  });
+  it("it should not make an internal 'kh' into an 'k'", () => {
+    let expected = "akhn";
+    assert.equal(dropSilentLeadingLetter("akhn"), expected)
+  });
+  //ae
+  it("it should make a leading 'ae' into an 'e'", () => {
+    let expected = "ether";
+    assert.equal(dropSilentLeadingLetter("aether"), expected)
+  });
+  it("it should not make an internal 'ae' into an 'e'", () => {
+    let expected = "haet";
+    assert.equal(dropSilentLeadingLetter("haet"), expected)
+  });
+  //wr
+  it("it should make a leading 'wr' into an 'r'", () => {
+    let expected = "rap";
+    assert.equal(dropSilentLeadingLetter("wrap"), expected)
+  });
+  it("it should not make an internal 'wr' into an 'r'", () => {
+    let expected = "owrt";
+    assert.equal(dropSilentLeadingLetter("owrt"), expected)
+  });
 });
